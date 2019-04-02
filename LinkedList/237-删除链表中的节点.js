@@ -20,7 +20,7 @@
  * 
  */
 
- /**
+/**
  * Definition for singly-linked list.
  * function ListNode(val) {
  *     this.val = val;
@@ -32,10 +32,10 @@
  * @return {void} Do not return anything, modify node in-place instead
  * 
  * 
- * 完全不懂题义呀  看评论做的个 可以这个要学习下链表是什么啦才能知道吧
+ * 完全不懂题义呀  看评论做的个 这个要学习下链表是什么啦才能知道吧
  */
-var deleteNode = function(node) {
-   if(node.next == null)return
+var deleteNode = function (node) {
+   if (node.next == null) return
    node.val = node.next.val
    node.next = node.next.next
 };

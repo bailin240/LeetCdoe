@@ -7,4 +7,5 @@
 # [BitOperation](https://github.com/bailin240/LeetCdoe/blob/master/BitOperation) 位运算相关
 # [LinkedList](https://github.com/bailin240/LeetCdoe/blob/master/LinkedList) 链表相关
 # [Mathematics](https://github.com/bailin240/LeetCdoe/blob/master/Mathematics) 数学相关
-# [SQL](https://github.com/bailin240/LeetCdoe/blob/master/LinkedList) SQL相关
+# [SQL](https://github.com/bailin240/LeetCdoe/blob/master/SQL) SQL数据库相关
+# [Stack](https://github.com/bailin240/LeetCdoe/blob/master/SQL) 栈相关
