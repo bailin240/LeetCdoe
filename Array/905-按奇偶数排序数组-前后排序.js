@@ -1,0 +1,42 @@
+"use strict"
+
+/***
+ * 给定一个非负整数数组 A，返回一个由 A 的所有偶数元素组成的数组，后面跟 A 的所有奇数元素
+ * 你可以返回满足此条件的任何数组作为答案
+ * 
+ * 示例：
+ * 输入：[3,1,2,4]
+ * 输出：[2,4,3,1]
+ * 输出 [4,2,3,1]，[2,4,1,3] 和 [4,2,1,3] 也会被接受
+ * 
+ * 1 <= A.length <= 5000
+ * 0 <= A[i] <= 5000
+ * 
+ */
+
+/**
+ * @param {number[]} A
+ * @return {number[]}
+ */
+let arr = [3, 1, 2, 4]
+var sortArrayByParity = function (A) {
+    let y = []
+    for (let i = 0; i < A.length; i++) {
+        let item = A[i]
+        item % 2 === 0 ? y.unshift(item) : y.push(item)
+    }
+    return y
+};
+
+var sortArrayByParity1 = function (A) {
+    let y = []
+    let l = []
+    A.map((v) => {v % 2 === 0 ? y.push(v) : l.push(v)})
+    return y.concat(l)
+};
+
+console.time()
+
+console.log(sortArrayByParity(arr))
+
+console.timeEnd()
