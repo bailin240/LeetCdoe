@@ -5,6 +5,6 @@
 
 console.time()
 
-console.log(middleNode([1,2,3,4,5]))
+console.log(majorityElement(nums))
 
 console.timeEnd()
