@@ -80,9 +80,11 @@ var binaryGap = function (N) {
 var binaryGap = function(N) {
     let res = 0;
     let str = N.toString(2).split('')
+    console.log(str)
     let l = 0
     for (let i = 0; i < str.length; i++) {
         if (str[i] == '1') {
+            console.log(i,l)
             res = Math.max(res, i - l)
             l = i
         }

@@ -1,25 +1,13 @@
 "use strict"
+// var a = 1, b = 2;
+// a = [a,b].slice(0,1)
+// b = [a,b].slice(1,2)
+// console.log(a.toString()) 
+// console.log(b.toString()) 
 
-/**
- * @param {string} A
- * @param {string} B
- * @return {string[]}
- */
-let A = "this apple is sweet",
-    B = "this apple is sour"
-var uncommonFromSentences = function (A, B) {
-    let obj = {}
-    let res = []
-    let arr = [...A.split(' '),...B.split(' ')]
-    arr.map((v) => !obj[v] ? obj[v] = 1:obj[v] += 1)
-    for(let index in obj) {
-        if(obj[index] == 1) res.push(index)
-    }
-    return res
-};
-
-console.time()
-
-console.log(uncommonFromSentences(A, B))
-
-console.timeEnd()
+function *foo() {
+    yield *[1,2,3]
+}
+for(var v of foo()){
+    console.log(v)
+}
